@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Static Comp II</title>
     <link rel="shortcut icon" href="images/icon.ico" />
@@ -9,25 +9,128 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-</head>
-<body>
-  <aside class="left-side-menu">left-side-menu
-  </aside>
-  <section class="search-nav">search-nav</section>
-  <header class="header">header</header>
-  <nav class="primary-nav">primary-nav</nav>
-  <section class="circle-graph-container">circle-graph-container</section>
-  <section class="bar-graph-container">bar-graph-container</section>
-  <article class="page-divide">
-    <hr>
-    <a class="circle">
-      <i class="fas fa-angle-up carrot"></i>
-    </a>
-  <hr>
-  </article>
-  <section class="table-container">table-container</section>
-  <section class="social-media">social-media</section>
-  <section class="links">links</section>
-  
-</body>
+  </head>
+  <body>
+    <aside class="left-side-menu">
+      left-side-menu
+    </aside>
+    <section class="search-nav">
+      search-nav
+    </section>
+    <header class="header">
+      header
+    </header>
+    <nav class="primary-nav">
+      primary-nav
+    </nav>
+    <section class="circle-graph-container flex-wrapper">
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart orange">
+        <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle"
+        stroke-dasharray="80, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage">3,154</text>      
+        </svg>
+      </div>
+        <!-- //// -->
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart orange">
+        <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+        <path class="circle"
+        stroke-dasharray="80, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage">1,546</text>      
+        </svg>
+      </div>
+      <div class="single-chart">
+        <svg viewbox="0 0 36 36" class="circular-chart orange">
+        <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle"
+        stroke-dasharray="80, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <text x="18" y="20.35" class="percentage">912</text>
+        </svg>
+      </div>
+    </section>
+    <section class="bar-graph-container">
+      <article class="bar-graph">
+        <div class="y-axis">
+          <span>500</span>
+          <span>400</span>
+          <span>300</span>
+          <span>200</span>
+          <span>100</span>
+          <span>0</span>
+        </div>
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        <div class="bar bar10"></div>
+        <div class="bar bar11"></div>
+        <div class="bar bar12"></div>
+        <div class="bar bar13"></div>
+        <div class="bar bar14"></div>
+      </article>
+        <div class="x-axis">
+          <span>S</span>
+          <span>M</span>
+          <span>T</span>
+          <span>W</span>
+          <span>T</span>
+          <span>F</span>
+          <span>S</span>
+          <span>S</span>
+          <span>M</span>
+          <span>T</span>
+          <span>W</span>
+          <span>T</span>
+          <span>F</span>
+          <span>S</span>
+        </div>
+    </section>
+    <article class="page-divide">
+      <hr>
+      <a class="circle">
+        <i class="fas fa-angle-up carrot"></i>
+      </a>
+       <hr>
+    </article>
+    <section class="table-container">
+      table-container
+    </section>
+    <section class="social-media">
+      social-media
+    </section>
+    <section class="links">
+      links
+    </section>
+  </body>
 </html>
