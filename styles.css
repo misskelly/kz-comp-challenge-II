@@ -24,6 +24,7 @@ ul,
 li {
   color: inherit;
   list-style-type: none;
+
 }
 
 a {
@@ -58,10 +59,33 @@ a {
   grid-column: span 3;
 }
 
-/*/////MAIN/////*/
-.circle-graph-container{
-  background-color: green;
+nav{
+  background-color: #FFFFFF;
 }
+
+.nav-ul {
+  color: #6D7A8B;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  width: 100%;
+}
+.nav-link {
+  padding-bottom: 1rem;
+}
+
+.nav-link:hover {
+  color: #3F4857;
+  border-bottom: 3px solid #00A4FF;
+}
+
+/*/////MAIN/////*/
+.circle-graphs{
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
 .bar-graph-container{
   background-color: blue;
   grid-column: span 2;
