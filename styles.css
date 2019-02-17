@@ -40,8 +40,47 @@ a {
 
 /*/////ASIDE/////*/
 .left-side-menu {
-  background-color: pink;
   grid-row: 1 / -1;
+  background-color: #334052;
+  color: #97A4B7;
+  display: inline-block;
+  line-height: 3.3;
+}
+.user{
+  border-bottom: 2px solid #212934;
+  height: 200px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.name{
+  font-size: 1.25rem;
+  margin: 0;
+  padding-left: 10px;
+}
+
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+}
+
+h5 {
+  color: #586983;
+  font-size: 1.1rem;
+  line-height: 1;
+  margin: 2rem 0 1rem 0;
+  padding-left: 40px;
+}
+
+.fw {
+  font-size: 1.25rem;
+  margin-right: 5px;
+  text-align: center;
+  width: 2.2rem;
 }
 
 /*/////HEADER/////*/
