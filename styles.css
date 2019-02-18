@@ -17,7 +17,8 @@ body {
   background-color: #f6f9fc;
   display: grid;
   grid-template-columns: 2fr 6fr 2fr 3fr;
-  grid-template-rows: 1fr 2fr 1fr 6fr 1fr 2fr 6fr;
+  grid-template-rows: 60px 2fr 1fr 6fr 1fr 2fr 6fr;
+  background-color: #FFFFFF;
 }
 
 ul,
@@ -32,11 +33,16 @@ a {
   text-decoration: none;
 }
 
+.name,
+h2,
+h3 {
+  margin: 0;
+}
+
 .hidden {
   display: none;
 }
 
-/*margin: 0*/
 
 /*/////ASIDE/////*/
 .left-side-menu {
@@ -94,6 +100,8 @@ h5 {
   grid-template-areas: 
   "ham mag search plus cal bx";
   grid-template-columns: 1fr .7fr 9fr 1fr 1fr 1fr;
+  border-bottom: 2px solid #E6EBF3;
+
 }
 
 .side-collapse {
@@ -175,12 +183,93 @@ button {
 
 
 
+/*headings*/
 
-
-.header{
-  background-color: orange;
+.header {
   grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
 }
+
+.heading-text {
+  margin-left: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #3F4857;
+  margin-bottom: 5px;
+}
+
+.heading-subtext {
+  display: flex;
+}
+.map-marker-icon {
+  padding-right: .5rem;
+}
+
+.location {
+  color: #6D7A8B;
+}
+
+h2,
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.dot {
+  color: #6d7a8b;
+  font-size: 3px;
+  padding: 6px 10px;
+}
+
+
+.preview-post {
+  color: #00A4FF;
+}
+
+.heading-buttons {
+  align-items: center;
+  color: #7A8595;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+
+.open-dot {
+  color: #78CA08;
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.open,
+.circle-btn {
+  background-color: #FFFFFF;
+  border: 2px solid #E6EBF3;
+  text-align: center;
+  padding: 5px;
+}  
+
+.open {
+  border-radius: 50px;
+  color: #7A8595;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 7rem;
+}
+.circle-btn {
+  border-radius: 50%;
+  width: 30px; 
+  margin-left: 10px;
+}
+
+
+
+/*nav*/
 .primary-nav{
   background-color: yellow;
   grid-column: span 3;
@@ -257,14 +346,6 @@ li,
   display: flex;
   align-items: center;
   grid-column: span 3;
-}
-.circle {
-  border: 2px solid #9eacc1;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  text-align: center; 
-  
 }
 
 .carrot {
