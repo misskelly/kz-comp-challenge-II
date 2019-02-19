@@ -8,7 +8,7 @@
 
 html {
   font-family: helvetica;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
   width: 100%;
   background-color: #f6f9fc;
   display: grid;
-  grid-template-columns: 2fr 6fr 2fr 3fr;
-  grid-template-rows: 60px 2fr 60px 6fr 1fr 2fr 10fr;
+  grid-template-columns: 2fr 5fr 2fr 3fr;
+  grid-template-rows: 60px 1fr 60px 3fr 40px 2fr 6fr;
   background-color: #FFFFFF;
 }
 
@@ -136,7 +136,7 @@ h5 {
   display: block;
   font-size: 1.5rem;
   border-left: 2px solid #E6EBF3;
-  line-height: 2.5;
+  line-height: 3;
 }
 
 .mag-glass {
@@ -170,7 +170,7 @@ button {
   font-size: 16px;
   width: 100%;
   display: block; 
-  height: 2rem;
+  height: 2.5rem;
   outline: none;
 }
 
@@ -290,7 +290,7 @@ h1 {
 /*nav*/
 .primary-nav{
   grid-column: span 3;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 nav{
@@ -494,8 +494,8 @@ table {
 thead {
   background: #6C7D97;
   color: #FFFFFF;
-  font-size: 1.1rem;
 }
+
 .table-heading {
   width: 25%;
 }
@@ -514,13 +514,46 @@ th {
 }
 
 td {
-  font-size: 1.1rem;
   padding: 2rem 3rem 2rem 2rem;
 }
 
 /*/////RIGHT-ASIDE/////*/
 .social-media {
-  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  background-color: #EAF1F6;
+
+}
+
+.social-media-btn {
+  width: 90%;
+  margin: 0 3rem 1rem auto;
+  border-radius: 3px;
+  padding: 1rem;
+  text-align: center;
+  text-transform: none;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.social-media-icon {
+  position: absolute;
+  left: 2rem;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+}
+
+.fb {
+  background: #436fc8;
+}
+
+.twitter {
+  background: #00abf5;
+}
+
+.in {
+  background: #0080c2;
 }
 .links{
   background-color: magenta;
