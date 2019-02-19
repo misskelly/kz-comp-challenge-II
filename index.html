@@ -20,7 +20,7 @@
         </p>
       </article>
       <article class="side-menu">
-        <div class="side-menu-main">
+        <div class="side-menu-main side-menu-div">
           <h5>
           Main
           </h5>
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="menu admin">
+        <div class="side-menu-div side-menu-admin">
           <h5>
           Admin
           </h5>
@@ -204,60 +204,78 @@
         </ul>
     </nav>
     <section class="circle-graphs">
-      <article class="circle-graph-container flex-wrapper">
-        <div class="single-chart">
-          <svg viewbox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
+      <article class="circle-graph-container">
+        <div class="circle-graph">
+          <svg viewbox="0 0 36 36" class="circle-svg applicants">
+          <path class="circle-path"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          <path class="circle"
+          <path class="applicants-circle circle"
           stroke-dasharray="80, 100"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          <text x="18" y="20.35" class="percentage">3,154</text>      
-          </svg>
+          <text x="18" y="19" class="applicants-num svg-num svg-text-style">
+            3,154
+          </text>  
+          <text x="18" y="24" class="applicants-text svg-text svg-text-style">
+            applicants
+          </text>      
+          </svg>          </svg>
         </div>
-          <!-- //// -->
-        <div class="single-chart">
-          <svg viewbox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
+        <div class="circle-graph middle">
+          <svg viewbox="0 0 36 36" class="circle-svg applicants">
+          <path class="circle-path"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-          <path class="circle"
+          />
+          <path class="applicants-circle circle"
           stroke-dasharray="80, 100"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          <text x="18" y="20.35" class="percentage">1,546</text>      
-          </svg>
+          <text x="18" y="19" class="applicants-num svg-num svg-text-style">
+            3,154
+          </text>  
+          <text x="18" y="24" class="applicants-text svg-text svg-text-style">
+            applicants
+          </text>      
+          </svg>          </svg>
         </div>
-        <div class="single-chart">
-          <svg viewbox="0 0 36 36" class="circular-chart orange">
-          <path class="circle-bg"
+        <div class="circle-graph">
+          <svg viewbox="0 0 36 36" class="circle-svg applicants">
+          <path class="circle-path"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          <path class="circle"
+          <path class="applicants-circle circle"
           stroke-dasharray="80, 100"
           d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          <text x="18" y="20.35" class="percentage">912</text>
-          </svg>
+          <text x="18" y="19" class="applicants-num svg-num svg-text-style">
+            3,154
+          </text>  
+          <text x="18" y="24" class="applicants-text svg-text svg-text-style">
+            applicants
+          </text>      
+          </svg>          </svg>
         </div>
       </article>
-        <button class="data-button">
-          <span class="totals-button">TOTALS; Out of <strong>5,231</strong> views</span>
+        <div class="data-btn-container">
+        <button class="data-btn totals-btn">
+          TOTALS
+            <i class="fas fa-circle dot data-dot"></i>
+          <span>Out of 5,231 views</span>
         </button>
+      </div>
     </section>
     <section class="bar-graph-container">
       <article class="bar-graph">
@@ -269,20 +287,48 @@
           <span>100</span>
           <span>0</span>
         </div>
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
-        <div class="bar bar4"></div>
-        <div class="bar bar5"></div>
-        <div class="bar bar6"></div>
-        <div class="bar bar7"></div>
-        <div class="bar bar8"></div>
-        <div class="bar bar9"></div>
-        <div class="bar bar10"></div>
-        <div class="bar bar11"></div>
-        <div class="bar bar12"></div>
-        <div class="bar bar13"></div>
-        <div class="bar bar14"></div>
+        <div class="bar bar1">
+          <div class="bar-fill bar1-fill"></div>
+        </div>
+        <div class="bar bar2">
+          <div class="bar-fill bar2-fill"></div>
+        </div>
+        <div class="bar bar3">
+          <div class="bar-fill bar3-fill"></div>
+        </div>
+        <div class="bar bar4">
+          <div class="bar-fill bar4-fill"></div>
+        </div>
+        <div class="bar bar5">
+          <div class="bar-fill bar5-fill"></div>
+        </div>
+        <div class="bar bar6">
+          <div class="bar-fill bar6-fill"></div>
+        </div>
+        <div class="bar bar7">
+          <div class="bar-fill bar7-fill"></div>
+        </div>
+        <div class="bar bar8">
+          <div class="bar-fill bar8-fill"></div>
+        </div>
+        <div class="bar bar9">
+          <div class="bar-fill bar9-fill"></div>
+        </div>
+        <div class="bar bar10">
+          <div class="bar-fill bar10-fill"></div>
+        </div>
+        <div class="bar bar11">
+          <div class="bar-fill bar11-fill"></div>
+        </div>
+        <div class="bar bar12">
+          <div class="bar-fill bar12-fill"></div>
+        </div>
+        <div class="bar bar13">
+          <div class="bar-fill bar13-fill"></div>
+        </div>
+        <div class="bar bar14">
+          <div class="bar-fill bar14-fill"></div>
+        </div>
       </article>
         <div class="x-axis">
           <span>S</span>
@@ -300,8 +346,8 @@
           <span>F</span>
           <span>S</span>
         </div>
-        <button class="data-button">
-            APPLICANTS/DAY
+        <button class="data-btn">
+            Applicants/day
         </button>
     </section>
     <article class="page-divide">
