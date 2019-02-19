@@ -94,11 +94,17 @@ h5 {
   padding-bottom: 1rem;
 }
 
+.checkbox-item,
 .menu-item {
   padding-left: 30px;
   width: 100%;
+  font-weight: bold;
+}
+.menu-item {
+  text-transform: uppercase;
 }
 
+.checkbox-item:hover,
 .menu-item:hover {
   color: white;
   background-color: #212934;
