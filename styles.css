@@ -17,7 +17,7 @@ body {
   background-color: #f6f9fc;
   display: grid;
   grid-template-columns: 2fr 6fr 2fr 3fr;
-  grid-template-rows: 60px 2fr 1fr 6fr 1fr 2fr 6fr;
+  grid-template-rows: 60px 2fr 60px 6fr 1fr 2fr 6fr;
   background-color: #FFFFFF;
 }
 
@@ -25,7 +25,7 @@ ul,
 li {
   color: inherit;
   list-style-type: none;
-
+  padding:0;
 }
 
 a {
@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 
+ul,
 .name,
 h2,
 h3 {
@@ -87,6 +88,22 @@ h5 {
   margin-right: 5px;
   text-align: center;
   width: 2.2rem;
+}
+
+.menu {
+  border-bottom: 2px solid #212934;
+  margin-top: 1rem;
+}
+
+.menu-item {
+  padding-left: 30px;
+  width: 100%;
+}
+
+.menu-item:hover {
+  color: white;
+  background-color: #212934;
+  border-left: 3px solid #00A4FF;
 }
 
 /*/////HEADER/////*/
@@ -189,6 +206,8 @@ button {
   grid-column: span 3;
   display: flex;
   justify-content: space-between;
+  color: #7A8595;
+  margin-bottom: 2rem;
 }
 
 .heading-text {
@@ -199,25 +218,21 @@ h1 {
   font-size: 2rem;
   font-weight: normal;
   color: #3F4857;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .heading-subtext {
   display: flex;
 }
+
 .map-marker-icon {
   padding-right: .5rem;
 }
 
 .location {
-  color: #6D7A8B;
-}
-
-h2,
-h3 {
-  font-size: 1rem;
   font-weight: normal;
-  margin: 0;
+  font-size: 1rem;
+  color: #6D7A8B;
 }
 
 .dot {
@@ -226,9 +241,10 @@ h3 {
   padding: 6px 10px;
 }
 
-
 .preview-post {
   color: #00A4FF;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 .heading-buttons {
@@ -257,9 +273,9 @@ h3 {
   border-radius: 50px;
   color: #7A8595;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .9rem;
   text-transform: uppercase;
-  width: 7rem;
+  width: 6rem;
 }
 .circle-btn {
   border-radius: 50%;
@@ -271,8 +287,8 @@ h3 {
 
 /*nav*/
 .primary-nav{
-  background-color: yellow;
   grid-column: span 3;
+  margin-top: 2rem;
 }
 
 nav{
@@ -282,46 +298,24 @@ nav{
 .nav-ul {
   color: #6D7A8B;
   display: flex;
-  justify-content: space-around;
-  padding-left: 0;
-  width: 100%;
-}
-.nav-link {
-  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 2rem;
 }
 
-.nav-link:hover {
+.nav-li {
+  margin: 0 40px 0 0;
+  padding-bottom: 1rem;
+
+}
+
+.nav-li:hover {
   color: #3F4857;
   border-bottom: 3px solid #00A4FF;
 }
 
-
-.menu {
-  border-bottom: 2px solid #212934;
-  margin-top: 1rem;
-}
-
-.menu-item {
-  padding-left: 30px;
-  width: 100%;
-}
-
-.menu-item:hover {
-  color: white;
-  background-color: #212934;
-  border-left: 3px solid #00A4FF;
-}
-
-ul,
-.menu {
-    margin-top: 0;
-    padding: 0;
-}
-
-li,
-.menu {
-  width: 100%;
-}
 
 
 /*/////MAIN/////*/
