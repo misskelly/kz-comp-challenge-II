@@ -17,8 +17,8 @@ body {
   background-color: #f6f9fc;
   display: grid;
   grid-template-columns: 2fr 5fr 2fr 3fr;
-  grid-template-rows: 60px 1fr 60px 3fr 40px 2fr 6fr;
-  background-color: #FFFFFF;
+  grid-template-rows: 60px auto 60px auto 80px 160px auto;
+  background-color: #EAF1F6;
 }
 
 ul,
@@ -55,10 +55,8 @@ h3 {
 }
 .user{
   border-bottom: 2px solid #212934;
-  height: 200px;
   padding-top: 40px;
   text-align: center;
-  width: 100%;
 }
 
 .name{
@@ -90,20 +88,27 @@ h5 {
   width: 2.2rem;
 }
 
-.menu {
+.side-menu-div {
   border-bottom: 2px solid #212934;
-  margin-top: 1rem;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
 }
 
+.checkbox-item,
 .menu-item {
   padding-left: 30px;
   width: 100%;
+  font-weight: bold;
+}
+.menu-item {
+  text-transform: uppercase;
 }
 
+.checkbox-item:hover,
 .menu-item:hover {
   color: white;
   background-color: #212934;
-  border-left: 3px solid #00A4FF;
+  border-left: 5px solid #00A4FF;
 }
 
 /*/////HEADER/////*/
@@ -205,15 +210,17 @@ button {
 /*headings*/
 
 .header {
+  background-color: #FFFFFF;
   grid-column: span 3;
   display: flex;
   justify-content: space-between;
   color: #7A8595;
-  margin-bottom: 2rem;
+  padding: 2rem 0;
+  height: 100%;
 }
 
 .heading-text {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 h1 {
@@ -240,7 +247,7 @@ h1 {
 .dot {
   color: #6d7a8b;
   font-size: 3px;
-  padding: 6px 10px;
+  padding: 4px 10px 6px 10px;
 }
 
 .preview-post {
@@ -257,32 +264,43 @@ h1 {
   padding-right: 3rem;
 }
 
+
 .open-dot {
   color: #78CA08;
   font-size: 1rem;
   margin-right: 2px;
 }
-
+.data-btn,
 .open,
 .circle-btn {
   background-color: #FFFFFF;
   border: 2px solid #E6EBF3;
   text-align: center;
-  padding: 5px;
 }  
 
+
+.data-btn,
 .open {
   border-radius: 50px;
   color: #7A8595;
   font-weight: bold;
   font-size: .9rem;
   text-transform: uppercase;
-  width: 6rem;
+  padding: 8px 1rem;
 }
+
 .circle-btn {
   border-radius: 50%;
-  width: 30px; 
+  width: 35px;  
   margin-left: 10px;
+  padding: 8px;
+
+}
+
+.data-btn:hover,
+.heading-btn:hover {
+  color: #FFFFFF;
+  background-color: #00A4FF;
 }
 
 
@@ -290,7 +308,7 @@ h1 {
 /*nav*/
 .primary-nav{
   grid-column: span 3;
-  margin-top: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 nav{
@@ -322,44 +340,43 @@ nav{
 
 /*/////MAIN/////*/
 
-
-
-
-/*graphs section*/
-
-.circle-graphs{
-  background-color: green;
-  display: flex;
-  flex-direction: column;
+.data-btn {
+  font-size: 10px;
+  margin-top: 1rem;
 }
 
-.bar-graph-container{
-  background-color: blue;
-  grid-column: span 2;
+.data-btn-container{
+  display: flex;
 }
 
+.data-dot {
+  padding: 2px;
+}
 
-/*/////CIRCLE SVGS/////*/
-.flex-wrapper {
+/*circle svgs*/
+
+.circle-graph-container {
   display: flex;
+  flex-direction: row;
   flex-flow: row nowrap;
+  padding: 40px 0 30px 20px;
+  width: 110%;
 }
 
-.single-chart {
+.circle-graph {
   width: 33%;
-  justify-content: space-around ;
 }
 
-.circular-chart {
+.circle-svg {
   display: block;
   margin: 10px auto;
   max-width: 80%;
   max-height: 250px;
 }
 
-.circle-bg {
+.circle-path {
   fill: none;
-  stroke: #eee;
+  stroke: #d9e6eb;
   stroke-width: 3.8;
 }
 
@@ -376,28 +393,59 @@ nav{
   }
 }
 
-.circular-chart.orange .circle {
+.circle-svg.orange .circle {
   stroke: #ff9f00;
 }
+.applicants-circle {
+  stroke: #4ab7c2;
+}
+.svg-text {
+  font-size: .2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-.percentage {
+
+.svg-text-style {
   fill: #666;
+  text-anchor: middle;
+}
+.svg-num {
+  font-size: .7em;
+}
+.percentage {
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
 }
 
-.bar-graph-container {
-  width: 100%;
+.circle-graphs{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
+.totals-btn {
+  margin: 0 25%;
+}
+
+/*bar graphs*/
+
+
+.bar-graph-container {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #7A8595;
+  grid-column: span 2;
+}
+
 .bar-graph {
   display: grid;
-  grid-template-columns: repeat(15, 18px);
-  grid-template-rows: repeat(100, 1.5px);
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(15, 11px);
+  grid-template-rows: repeat(100, 1.2px);
+  grid-column-gap: 11px;
+  padding-top: 50px;
 }
 
 .y-axis {
@@ -409,16 +457,60 @@ nav{
 }
 
 .bar {
-  background-color: lightgrey;
+  background-color: #4ab7c2;
   grid-row: span 100;
 }
- .x-axis{
+
+.bar-fill {
+  width: 100%;
+  height: 50%;
+  background-color: #d9e6eb;
+}
+.bar8-fill,
+.bar1-fill {
+  height: 95%;
+}
+
+.bar3-fill {
+  height: 40%;
+}
+
+.bar4-fill,
+.bar10-fill {
+  height: 25%;
+}
+
+.bar5-fill,
+.bar12-fill {
+  height: 60%;
+}
+
+.bar7-fill {
+  height: 80%;
+}
+
+.bar13-fill {
+  height: 70%;
+}
+
+.bar14-fill {
+  height: 90%;
+}
+
+
+.bar9-fill {
+  height: 30%;
+}
+
+.x-axis{
   display: flex;
+  font-weight: 600;
   justify-content: space-between;
-  width: 383px;
-  margin-left: 28px;
+  width: 270px;
+  margin-left: 20px;
   padding-top: 5px;
- }
+}
+
 
 
 /*page divide*/
@@ -428,6 +520,7 @@ nav{
   display: flex;
   align-items: center;
   grid-column: span 3;
+  margin-bottom: 20px;
 }
 
 .carrot {
